@@ -1,0 +1,2 @@
+Selected Feature Indices: [53, 40, 33, 19, 8, 31, 51, 20, 13, 34, 22, 29, 3, 6, 44, 14, 30, 17, 9, 7, 46]
+Selected Feature Names: ['Waist circ', 'Packs/Year', 'Mono 48h', 'F alc', 'CCI', 'Lipase', 'WBC 48h', 'Fluid 48h', 'Creat 48h', 'Mono Adm', 'GPT', 'Inflammatory Index', 'Albumin', 'BUN 48h', 'Pleural Effusion', 'Creat Adm', 'LYM 48h', 'Eosi 48h', 'CRP 48h', 'BUN Adm', 'SIRS']

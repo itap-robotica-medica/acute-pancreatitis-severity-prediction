@@ -1,0 +1,2 @@
+Selected Feature Indices: [8, 18, 41, 7, 24, 21, 3, 15, 26, 23, 11, 34, 6, 36]
+Selected Feature Names: ['CRP Adm', 'Glu', 'WBC Adm', 'CCI', 'Lipase', 'Hct Adm', 'Albumin', 'F alc', 'Mono Adm', 'Inflammatory Index', 'Creat Adm', 'Pleural Effusion', 'BUN Adm', 'SIRS']
