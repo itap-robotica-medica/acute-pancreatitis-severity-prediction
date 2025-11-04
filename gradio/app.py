@@ -73,5 +73,5 @@ with gr.Blocks(title="Predicción — 24h & 48h",
     btn_48.click(fn=utils.predict_48, inputs=inputs_48, outputs=out_48)
 
 if __name__ == "__main__":
-    # server_name="0.0.0.0" útil para contenedores o despliegue
+    # server_name="0.0.0.0"
     demo.launch()
