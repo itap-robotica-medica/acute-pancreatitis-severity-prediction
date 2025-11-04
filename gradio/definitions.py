@@ -21,7 +21,7 @@ selected_48 = [
 # -------------------------------------------------------------------
 features_24 = [
     "SIRS",
-    "BUN Admission",
+    "Blood Urea Nitrogen (BUN) Admission",
     "Pleural Effusion",
     "Creatinine Admission",
     "Inflamatory Index",
@@ -39,7 +39,7 @@ features_24 = [
 features_48 = [
     "SIRS",
     "Blood Urea Nitrogen (BUN) Admission",
-    "C-reactive protein (CRP) 48h",
+    "C-reactive Protein (CRP) 48h",
     "Eosinophils 48h",
     "Lymphocytes 48h",
     "Creatinine Admission",
@@ -51,7 +51,7 @@ features_48 = [
     "Monocytes Admission",
     "Creatinine 48h",
     "Intravenous fluids 48h",
-    "White Blood (WBC) Cell 48h",
+    "White Blood Cell (WBC) 48h",
     "Lipase",
     "Charlson Comorbidity Index (excluding age)",
     "Alkaline phosphatase (ALP)",   # f ALC
@@ -94,7 +94,7 @@ ui_to_model_48 = {
     "Monocytes Admission": "Mono Adm",
     "Alanine Aminotransferase (ALT)": "GPT",
     "Inflamatory Index": "Inflammatory Index",  # NETs adm / Platets = (PMN Adm/ LYM adm )/platets
-    "BUN 48h": "BUN 48h",
+    "Blood Urea Nitrogen (BUN) 48h": "BUN 48h",
     "Pleural Effusion": "Pleural Effusion",
     "Albumin": "Albumin",
     "Lipase": "Lipase",
@@ -170,7 +170,7 @@ META = {
 
     # --- Hematología / Diferenciales ---
     "White Blood Cell (WBC) Admission": {"unit": "×10^3/μL", "min": 0.5, "max": 40, "value": 0.5, "step": 0.1, "hint": "[0.5–40]"},
-    "White Blood Cell (WBC) 48h": {"unit": "×10^3/μL", "min": 0.5, "max": 40, "step": 0.1, "hint": "[0.5–40]"},
+    "White Blood Cell (WBC) 48h": {"unit": "×10^3/μL", "min": 0.5, "max": 40, "value": 0.5, "step": 0.1, "hint": "[0.5–40]"},
     "Hematocrit Admission": {"unit": "%", "min": 10, "max": 70, "value": 10, "step": 0.1, "hint": "[10–70]"},
     "Lymphocytes 48h": {"unit": "×10^3/μL", "min": 0, "max": 10, "step": 0.1, "hint": "[0–10]"},
     "Eosinophils 48h": {"unit": "/μL", "min": 0, "max": 2000, "step": 10, "hint": "[0–2,000]"},
