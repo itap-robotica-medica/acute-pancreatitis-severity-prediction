@@ -9,7 +9,7 @@ def make_number(label_name: str):
     lbl = f"{label_name}" + (f" ({unit})" if unit else "")
     return gr.Number(
         label=lbl,
-        value=0.0,
+        value=meta.get("value"),
         minimum=meta.get("min"),
         maximum=meta.get("max"),
         step=meta.get("step"),

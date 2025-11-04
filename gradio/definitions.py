@@ -154,24 +154,24 @@ META = {
     "Pleural Effusion": {"binary": True, "unit": "", "hint": "0 = No, 1 = Yes"},
 
     # --- Química / Bioquímica ---
-    "Blood Urea Nitrogen (BUN) Admission": {"unit": "mg/dL", "min": 1, "max": 200, "step": 1, "hint": "[1–200]"},
-    "Blood Urea Nitrogen (BUN) 48h": {"unit": "mg/dL", "min": 1, "max": 200, "step": 1, "hint": "[1–200]"},
-    "Creatinine Admission": {"unit": "mg/dL", "min": 0.2, "max": 15, "step": 0.01, "hint": "[0.2–15]"},
-    "Creatinine 48h": {"unit": "mg/dL", "min": 0.2, "max": 15, "step": 0.01, "hint": "[0.2–15]"},
+    "Blood Urea Nitrogen (BUN) Admission": {"unit": "mg/dL", "min": 1, "max": 200, "value": 1, "step": 1, "hint": "[1–200]"},
+    "Blood Urea Nitrogen (BUN) 48h": {"unit": "mg/dL", "min": 1, "max": 200, "value": 1, "step": 1, "hint": "[1–200]"},
+    "Creatinine Admission": {"unit": "mg/dL", "min": 0.2, "max": 15, "value": 0.2, "step": 0.01, "hint": "[0.2–15]"},
+    "Creatinine 48h": {"unit": "mg/dL", "min": 0.2, "max": 15, "value": 0.2, "step": 0.01, "hint": "[0.2–15]"},
     "C-reactive Protein (CRP) Admission": {"unit": "mg/L", "min": 0, "max": 500, "step": 1, "hint": "[0–500]"},
     "C-reactive Protein (CRP) 48h": {"unit": "mg/L", "min": 0, "max": 500, "step": 1, "hint": "[0–500]"},
-    "Glucose": {"unit": "mg/dL", "min": 40, "max": 600, "step": 1, "hint": "[40–600]"},
+    "Glucose": {"unit": "mg/dL", "min": 40, "max": 600, "value": 40, "step": 1, "hint": "[40–600]"},
     "Lipase": {"unit": "U/L", "min": 0, "max": 5000, "step": 1, "hint": "[0–5,000]"},
-    "Albumin": {"unit": "g/dL", "min": 1, "max": 6, "step": 0.1, "hint": "[1.0–6.0]"},
+    "Albumin": {"unit": "g/dL", "min": 1, "max": 6, "value": 1, "step": 0.1, "hint": "[1.0–6.0]"},
     "Alanine Aminotransferase (ALT)": {"unit": "U/L", "min": 0, "max": 1000, "step": 1, "hint": "[0–1,000]"},
-    "Alkaline phosphatase (ALP)": {"unit": "U/L", "min": 20, "max": 1000, "step": 1, "hint": "[20–1,000]"},
+    "Alkaline phosphatase (ALP)": {"unit": "U/L", "min": 20, "max": 1000, "value": 20, "step": 1, "hint": "[20–1,000]"},
     "Intravenous fluids 48h": {"unit": "L", "min": 0, "max": 20, "step": 0.1, "hint": "[0–20]"},
 
 
     # --- Hematología / Diferenciales ---
-    "White Blood Cell (WBC) Admission": {"unit": "×10^3/μL", "min": 0.5, "max": 40, "step": 0.1, "hint": "[0.5–40]"},
+    "White Blood Cell (WBC) Admission": {"unit": "×10^3/μL", "min": 0.5, "max": 40, "value": 0.5, "step": 0.1, "hint": "[0.5–40]"},
     "White Blood Cell (WBC) 48h": {"unit": "×10^3/μL", "min": 0.5, "max": 40, "step": 0.1, "hint": "[0.5–40]"},
-    "Hematocrit Admission": {"unit": "%", "min": 10, "max": 70, "step": 0.1, "hint": "[10–70]"},
+    "Hematocrit Admission": {"unit": "%", "min": 10, "max": 70, "value": 10, "step": 0.1, "hint": "[10–70]"},
     "Lymphocytes 48h": {"unit": "×10^3/μL", "min": 0, "max": 10, "step": 0.1, "hint": "[0–10]"},
     "Eosinophils 48h": {"unit": "/μL", "min": 0, "max": 2000, "step": 10, "hint": "[0–2,000]"},
     "Monocytes Admission": {"unit": "/μL", "min": 0, "max": 3000, "step": 10, "hint": "[0–3,000]"},
@@ -180,6 +180,6 @@ META = {
     # --- Índices / Antropometría / Hábitos (numéricos en tu UI) ---
     "Inflamatory Index": {"unit": "×10^3", "min": 0, "max": 5000, "step": 1, "hint": "[0–5000]"},
     "Smoking status": {"unit": "Packs/year", "min": 0, "max": 800, "step": 1, "hint": "[0–800]"},
-    "Waist circumference/Triglycerides": {"unit": "cm", "min": 40, "max": 200, "step": 0.5, "hint": "[40–200]"},
+    "Waist circumference/Triglycerides": {"unit": "cm", "min": 40, "max": 200, "value": 40, "step": 0.5, "hint": "[40–200]"},
 }
 
