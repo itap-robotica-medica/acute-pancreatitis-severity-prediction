@@ -150,8 +150,8 @@ SCALE_MAP = {
 # Etiquetas = exactamente las usadas en la UI (features_24 / features_48)
 META = {
     # --- Binarias / indicadores ---
-    "SIRS": {"binary": True, "unit": "", "hint": "0 = No, 1 = Yes"},
-    "Pleural Effusion": {"binary": True, "unit": "", "hint": "0 = No, 1 = Yes"},
+    "SIRS": {"binary": True, "unit": "", "hint": "Uncheck = No, Check = Yes"},
+    "Pleural Effusion": {"binary": True, "unit": "", "hint": "Uncheck = No, Check = Yes"},
 
     # --- Química / Bioquímica ---
     "Blood Urea Nitrogen (BUN) Admission": {"unit": "mg/dL", "min": 1, "max": 200, "value": 1, "step": 1, "hint": "[1–200]"},

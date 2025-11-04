@@ -17,6 +17,28 @@ def make_number(label_name: str):
     )
 
 
+def make_param(label_name: str):
+    meta = META.get(label_name, {})
+    unit = meta.get("unit")
+    lbl = f"{label_name}" + (f" ({unit})" if unit else "")
+    if(meta.get("binary")):
+        return gr.Checkbox(
+            label=lbl,
+            value=False,
+            info=meta.get("hint"),
+        )
+    else:
+        return gr.Number(
+            label=lbl,
+            value=meta.get("value"),
+            minimum=meta.get("min"),
+            maximum=meta.get("max"),
+            step=meta.get("step"),
+            info=meta.get("hint"),   # se muestra en gris bajo el campo
+        )
+
+
+
 # -------------------------------------------------------------------
 # Construcción de la UI con dos zonas 50/50
 # -------------------------------------------------------------------
@@ -44,7 +66,7 @@ with gr.Blocks(title="Predicción — 24h & 48h",
             with gr.Group(elem_classes=["wrap-col"]):
                 gr.Markdown("<h3 style='text-align: center;'>24-hour model</h3>")
 
-                inputs_24 = [make_number(name) for name in features_24]
+                inputs_24 = [make_param(name) for name in features_24]
 
                 btn_24 = gr.Button("Calcular predicción (24h)", variant="primary")
                 out_24 = gr.Number(label="AP probability (%):", precision=2, interactive=False)
@@ -54,7 +76,7 @@ with gr.Blocks(title="Predicción — 24h & 48h",
             with gr.Group(elem_classes=["wrap-col"]):
                 gr.Markdown("<h3 style='text-align: center;'>48-hour model</h3>")
 
-                inputs_48 = [make_number(name) for name in features_48]
+                inputs_48 = [make_param(name) for name in features_48]
 
                 btn_48 = gr.Button("Calcular probabilidad (48h)", variant="primary")
                 out_48 = gr.Number(label="AP probability (%):", precision=2, interactive=False)
