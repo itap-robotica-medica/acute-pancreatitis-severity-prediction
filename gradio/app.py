@@ -85,7 +85,7 @@ with gr.Blocks(title="Predicción — 24h & 48h",
         """
         © 2025 — Based on Cisnal, A. Ruiz-Rebollo, M.L. et al.</i>,  
         <b>Improved Early Prediction of Acute Pancreatitis Severity Using SHAP-Based XGBoost Model: Beyond Traditional Scoring Systems</b>.  
-        DOI: <a href="https://doi.org/10.xxxx/yyyy" target="_blank">10.xxxx/yyyy</a>
+        DOI: <a href="https://doi.org/10.1016/j.dld.2025.10.017" target="_blank">10.1016/j.dld.2025.10.017</a>
         """,
         elem_classes=["footer"]
     )
